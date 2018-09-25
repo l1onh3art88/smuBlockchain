@@ -1,0 +1,161 @@
+.home{
+  width:100vw;
+  height: 100vh;
+  background-image: url("../../../assets/images/landing.jpg");
+  background-size: cover;
+  background-position-y: 50%;
+}
+.overlay{
+  position: absolute;
+  height: 100vh;
+  width:100vw;
+  background-color: black;
+  opacity:.35;
+  z-index: 1;
+}
+.heading,.description{
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  color:white;
+  font-family: 'Roboto';
+}
+.heading{
+  padding-top:25vh;
+}
+.heading h1{
+  font-size:5rem;
+}
+.description p{
+  font-size: 1.2rem;
+  max-width: 40vw;
+  margin: auto;
+}
+
+/* Education Section*/
+
+.education{
+  display: inline-block;
+  width:100vw;
+  margin-top:15vh;
+  height:40vh;
+}
+.education:before{
+  content:"";
+  position: absolute;
+  left: 25vw;
+  bottom:-5vh;
+  height: 1px;
+  width:50vw;
+  border-top:solid black 1px;
+}
+#education-paragraph{
+  display: inline-block;
+  vertical-align: top;
+}
+#education-header{
+  height: 100%;
+  text-align: center;
+  background-image: url("../../../assets/images/education.jpg");
+  background-size: cover;
+  float: right;
+}
+
+#education-header h1{
+  margin:0;
+}
+/* Training */
+.training{
+  display: inline-block;
+  width:100vw;
+  height:40vh;
+  margin-top:15vh;
+}
+#training-paragraph{
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 10vh;
+  text-align: right;
+}
+#training-paragraph p{
+  max-width:70vw;
+}
+.training:before{
+  content:"";
+  position: absolute;
+  left: 25vw;
+  bottom:-60vh;
+  height: 1px;
+  width:50vw;
+  border-top:solid black 1px;
+
+}
+#training-header{
+  height: 100%;
+  float: left;
+  background-image:url("../../../assets/images/chart.jpg");
+  background-size: cover;
+}
+
+/* Preparation */
+
+.preparation{
+  display: inline-block;
+  width:100vw;
+  margin-top:15vh;
+  height:40vh;
+  margin-bottom:10vh;
+}
+.preparation:before{
+  content:"";
+  position: absolute;
+  left: 25vw;
+  bottom:-120vh;
+  height: 1px;
+  width:50vw;
+  border-top:solid black 1px;
+}
+#preparation-paragraph{
+  display: inline-block;
+  vertical-align: top;
+}
+#preparation-header{
+  height: 100%;
+  text-align: center;
+  background-image: url("../../../assets/images/prep.jpg");
+  background-size: cover;
+  float: right;
+}
+
+#preparation-header h1{
+  margin:0;
+}
+
+/* Footer */
+
+footer{
+  height: 5vh;
+  background-color: grey;
+  color:white;
+}
+footer span{
+  margin-top:1vh;
+  margin-right:2vw;
+  font-family: 'Roboto'
+}
+
+/* Font handling */
+
+.education,.preparation,.training{
+  font-family: 'Fjalla One';
+  padding-left:5vw;
+  padding-right:5vw;
+}
+
+h2{
+  font-size:4rem;
+}
+
+
+
+

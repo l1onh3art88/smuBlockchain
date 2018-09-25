@@ -1,0 +1,9 @@
+.navbar{
+  background-color: transparent;
+  position: absolute;
+  top:0;
+  z-index: 10;
+}
+.nav-link,.navbar-brand{
+  color:white;
+}
