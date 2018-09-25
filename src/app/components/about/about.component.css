@@ -34,7 +34,6 @@
   text-align: center;
   background-image: url("../../../assets/images/education.jpg");
   background-size: cover;
-  float: right;
 }
 
 #education-header h1{
@@ -68,7 +67,6 @@
 }
 #training-header{
   height: 100%;
-  float: left;
   background-image:url("../../../assets/images/chart.jpg");
   background-size: cover;
 }
@@ -100,7 +98,6 @@
   text-align: center;
   background-image: url("../../../assets/images/prep.jpg");
   background-size: cover;
-  float: right;
 }
 
 #preparation-header h1{
@@ -128,3 +125,49 @@ h2{
 .clearfix{
   clear:both;
 }
+
+/* Row  */
+
+.row{
+  height:40vh;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 667px){
+  /* Education */
+  #education-header{
+    padding:0;
+    height:50vh;
+  }
+  .education{
+    height:initial;
+  }
+  .row{
+    height:initial;
+  }
+  /* training */
+  .training{
+    height:initial;
+  }
+  .training .row{
+    flex-direction: column-reverse;
+  }
+  .training:before{
+    bottom:-265vh;
+  }
+  #training-header{
+    height: 50vh;
+    padding:0;
+  }
+   /* prep */
+
+   #preparation-header{
+     height: 50vh;
+     padding:0;
+   }
+   .preparation{
+     height:initial;
+   }
+}
+

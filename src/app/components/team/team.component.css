@@ -132,3 +132,10 @@ h1 {
   background-image: url("../../../assets/images/Josh.jpeg");
   background-size: cover;
 }
+
+@media screen and (max-width: 667px){
+
+  .card{
+    flex: 0 0 100%;
+  }
+}

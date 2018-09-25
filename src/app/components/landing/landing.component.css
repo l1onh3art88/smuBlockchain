@@ -66,6 +66,7 @@ footer span{
 
 .row{
   height: 100%;
+  width:100%;
 }
 .meetingInfo {
   border-bottom:1px solid black;
@@ -100,6 +101,7 @@ footer span{
   display: inline-block;
   margin:auto;
   height:100%;
+  width:100%;
   padding-top:5vh;
   padding-bottom:5vh;
 }
@@ -116,4 +118,35 @@ footer span{
   clear:both;
 }
 
+
+@media screen and (max-width: 667px){
+  .heading{
+    padding-top:30vh;
+  }
+  .heading h1{
+    font-size:2.5rem;
+  }
+  .description p{
+    max-width:80vw;
+  }
+  .photo{
+    margin-left:0;
+    width:100vw;
+  }
+
+  .textFrame:after{
+    display: none;
+  }
+
+  .frame{
+    padding:0;
+  }
+  .meetingInfo{
+    height:initial;
+  }
+  .meetingInfo .row{
+    margin:0;
+  }
+
+}
 
