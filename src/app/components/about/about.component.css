@@ -1,0 +1,130 @@
+/* About Header */
+
+.about{
+  text-align: center;
+  font-family: 'Fjalla One';
+  font-size:5rem;
+  margin-top:5vh;
+}
+
+
+/* Education Section*/
+
+.education{
+  display: inline-block;
+  width:100vw;
+  margin-top:15vh;
+  height:40vh;
+}
+.education:before{
+  content:"";
+  position: absolute;
+  left: 25vw;
+  bottom:-25vh;
+  height: 1px;
+  width:50vw;
+  border-top:solid black 1px;
+}
+#education-paragraph{
+  display: inline-block;
+  vertical-align: top;
+}
+#education-header{
+  height: 100%;
+  text-align: center;
+  background-image: url("../../../assets/images/education.jpg");
+  background-size: cover;
+  float: right;
+}
+
+#education-header h1{
+  margin:0;
+}
+/* Training */
+.training{
+  display: inline-block;
+  width:100vw;
+  height:40vh;
+  margin-top:15vh;
+}
+#training-paragraph{
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 10vh;
+  text-align: right;
+}
+#training-paragraph p{
+  max-width:70vw;
+}
+.training:before{
+  content:"";
+  position: absolute;
+  left: 25vw;
+  bottom:-80vh;
+  height: 1px;
+  width:50vw;
+  border-top:solid black 1px;
+
+}
+#training-header{
+  height: 100%;
+  float: left;
+  background-image:url("../../../assets/images/chart.jpg");
+  background-size: cover;
+}
+
+/* Preparation */
+
+.preparation{
+  display: inline-block;
+  width:100vw;
+  margin-top:15vh;
+  height:40vh;
+  margin-bottom:10vh;
+}
+.preparation:before{
+  content:"";
+  position: absolute;
+  left: 25vw;
+  bottom:-135vh;
+  height: 1px;
+  width:50vw;
+  border-top:solid black 1px;
+}
+#preparation-paragraph{
+  display: inline-block;
+  vertical-align: top;
+}
+#preparation-header{
+  height: 100%;
+  text-align: center;
+  background-image: url("../../../assets/images/prep.jpg");
+  background-size: cover;
+  float: right;
+}
+
+#preparation-header h1{
+  margin:0;
+}
+
+
+/* Font handling */
+
+.education,.preparation,.training{
+  font-family: 'Fjalla One';
+  padding-left:5vw;
+  padding-right:5vw;
+}
+
+h2{
+  font-size:3.5rem;
+}
+
+/* Whole About Section */
+
+.about-section{
+  border-bottom: 1px solid black;
+}
+.clearfix{
+  clear:both;
+}

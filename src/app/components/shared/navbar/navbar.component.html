@@ -5,10 +5,10 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" [routerLink]="['/landing']">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" [routerLink]="['/about']">About</a>
-      <a class="nav-item nav-link" [routerLink]="['/team']">Team</a>
-      <a class="nav-item nav-link" [routerLink]="['/contact']">Contact Us</a>
+      <span class="nav-item nav-link active" [ngx-scroll-to]="'#about-section'">Home <span class="sr-only">(current)</span></span>
+      <span class="nav-item nav-link" [routerLink]="['/about']">About</span>
+      <span class="nav-item nav-link" [routerLink]="['/team']">Team</span>
+      <span class="nav-item nav-link" [routerLink]="['/contact']">Contact Us</span>
     </div>
   </div>
 </nav>

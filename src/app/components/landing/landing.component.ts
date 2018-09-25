@@ -6,8 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing.component.css']
 })
 export class LandingComponent implements OnInit {
+  public ngxScrollToDuration: number;
 
-  constructor() { }
+  constructor() {
+    this.ngxScrollToDuration = 2000;
+
+  }
 
   ngOnInit() {
   }

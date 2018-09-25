@@ -1,0 +1,134 @@
+.cards {
+  max-width: width 80vw;
+  margin: auto;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.card {
+  margin-top: 5vh;
+  flex: 0 0 33.33%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  border: 0;
+}
+.image-frame {
+  height: 45vh;
+}
+
+.card-img-top {
+  border: 1px solid black;
+  max-width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: -1;
+}
+
+.card-text {
+  display: block;
+  font-family:"Fjalla One"
+}
+h4{
+  font-family:"Fjalla One"
+}
+/* Header */
+h1 {
+  font-family: "Fjalla One";
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 5vh;
+}
+/* section margins */
+
+.team-section {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  height: 100%;
+  border-bottom: 1px solid black;
+
+}
+
+/* photos */
+/* --------------------------------------------------*/
+
+#spencer {
+  height: 100%;
+  background-image: url("../../../assets/images/spencer.jpg");
+  background-size: cover;
+}
+#spencer:after,
+#rick:after,
+#josh:after,
+#max:after,
+#muaz:after,
+#rob:after {
+  transition: all 0.35s linear;
+  -moz-transition: all 0.35s linear; /* Firefox 4 */
+  -webkit-transition: all 0.35s linear; /* Safari and Chrome */
+  -o-transition: all 0.35s linear; /* Opera */
+  -ms-transition: all 0.35s linear; /* Explorer 10 */
+  content: "";
+  display: block;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  font-family: "Fjalla One";
+  font-size:25px;
+  padding-top: 15vh;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+#rob:after {
+  content: "Committee Manager";
+}
+#max:after {
+  content: "Public Relations Coordinator";
+}
+#josh:after {
+  content: "Project Manager";
+}
+#rick:after {
+  content: "Vice President";
+}
+#spencer:after {
+  content: "President";
+}
+#muaz:after {
+  content: "Secretary";
+}
+#spencer-frame:hover #spencer:after,
+#rick-frame:hover #rick:after,
+#josh-frame:hover #josh:after,
+#max-frame:hover #max:after,
+#muaz-frame:hover #muaz:after,
+#rob-frame:hover #rob:after{
+  opacity: 1;
+}
+
+#rick {
+  height: 100%;
+  background-image: url("../../../assets/images/rick.jpeg");
+  background-size: cover;
+}
+#max {
+  height: 100%;
+  background-image: url("../../../assets/images/max.jpeg");
+  background-size: cover;
+}
+#muaz {
+  height: 100%;
+  background-image: url("../../../assets/images/muaz.jpeg");
+  background-size: cover;
+}
+#rob {
+  height: 100%;
+  background-image: url("../../../assets/images/rob.png");
+  background-size: cover;
+}
+#josh {
+  height: 100%;
+  background-image: url("../../../assets/images/Josh.jpeg");
+  background-size: cover;
+}

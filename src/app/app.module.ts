@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { TeamComponent } from './components/team/team.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
-
+import {ScrollToModule } from '@nicky-lenaers/ngx-scroll-to'
 
 const appRoutes: Routes = [
 
@@ -52,6 +52,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes
     ),
+    ScrollToModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

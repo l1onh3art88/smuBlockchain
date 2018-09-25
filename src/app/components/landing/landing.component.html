@@ -1,5 +1,5 @@
 <div class="overlay"></div>
-<div class="home">
+<div class="home" #home>
   <div class="heading">
     <h1>SMU Blockchain Society</h1>
   </div>
@@ -7,48 +7,42 @@
     <p>SMU Blockchain Society strives to educate, train, and prepare students for future employment</p>
   </div>
 </div>
-<app-navbar></app-navbar>
-<div class="education">
-  <div id="education-paragraph" class="col-md-7">
-    <h2>Education</h2>
-    <p>
-      The word blockchain has been used heavily in the past couple years. The SMU Blockchain Society teaches its members about
-      why it became so relevant, how it is being misintrepreted, and when to use it. Understanding the use cases of blockchain
-      technology is crucial information needed before deciding to build or invest in this space.
-
-    </p>
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="#">SMU Blockchain Society</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+    aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <span class="nav-item nav-link active" [ngx-scroll-to-duration]="ngxScrollToDuration" [ngx-scroll-to]="home">Home <span class="sr-only">(current)</span></span>
+      <span class="nav-item nav-link" [ngx-scroll-to-duration]="ngxScrollToDuration" [ngx-scroll-to]="about">About</span>
+      <span class="nav-item nav-link" [ngx-scroll-to-duration]="ngxScrollToDuration" [ngx-scroll-to]="team">Team</span>
+      <span class="nav-item nav-link" [ngx-scroll-to-duration]="ngxScrollToDuration" [ngx-scroll-to]="footer">Contact Us</span>
+    </div>
   </div>
-  <div id="education-header" class="col-md-5">
-  </div>
+</nav>
+<div #about>
+  <app-about></app-about>
 </div>
-<div class="training">
-  <div id="training-header" class="col-md-5">
+<section class="meetingInfo">
+  <div class="row">
+    <div class="col-md-6 textFrame">
+      <h1 class="meetingInfoText">
+        When & Where
+      </h1>
+    </div>
+    <div class="col-md-6 frame">
+      <img class="photo" src="../../../assets/images/flyer.jpeg" alt="Blockchain Society Flyer">
+    </div>
   </div>
-  <div id="training-paragraph" class="col-md-7">
-    <h2>Training</h2>
-    <p>
-      SMU Blockchain Society trains its members to have a broad understanding of the field. The Society focuses on two major aspects:
-      Investment & Development. The Development Committee focuses on training the engineer oriented students on building decentralized
-      applications and smart contracts. The Investments Committee focuses on the cryptocurrency market, hosts trading competitions, and
-      analyzes chart patterns.
-    </p>
-  </div>
+</section>
+<div #team>
+  <app-team></app-team>
 </div>
-<div class="preparation">
-
-  <div id="preparation-paragraph" class="col-md-7">
-    <h2>Preparation</h2>
-    <p>
-      Members of the SMU Blockchain Society will be prepared
-      for job recruitmentwithin their respective majors regarding
-      the blockchain space. They will have been to mulitple conferences
-      and be able to present what they have accomplished with tact
-      during the job recruitment process.
-    </p>
-  </div>
-  <div id="preparation-header" class="col-md-5">
-  </div>
+<div #contact>
+  <app-contact></app-contact>
 </div>
-<footer class = "footer">
-  <span class= "float-right">SMU Blockchain Society 2018</span>
+<footer class="footer" #footer>
+  <span class="float-right">SMU Blockchain Society 2018</span>
 </footer>

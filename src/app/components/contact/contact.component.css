@@ -1,0 +1,24 @@
+input,textarea{
+  max-width:30vw;
+  margin:auto;
+}
+label{
+  font-family: "Fjalla One";
+  padding-top:1vh;
+}
+h1{
+  font-family:"Fjalla One"
+}
+.contact-section{
+  margin-left:5vw;
+  margin-right:5vw;
+  margin-bottom:5vh;
+  margin-top:5vh;
+  text-align: center;
+}
+button{
+  margin-top:1vh;
+}
+#submit:hover{
+  cursor: pointer;
+}
